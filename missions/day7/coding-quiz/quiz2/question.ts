@@ -7,7 +7,7 @@
 */
 
 /* [Quiz] 아래의 코드를 완성해 오류를 제거하세요 */
-type Func = any;
+type Func = (a: number, b: string) => boolean;
 
 /* [Test] 여기부터는 정답을 체크하기 위한 용도로 수정하지 않습니다 */
 const func: Func = (a, b) => {

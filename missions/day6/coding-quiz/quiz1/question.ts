@@ -9,4 +9,4 @@ type Person = {
   age: number;
 };
 
-let person: Person = {};
+let person: Person = {} as Person;

@@ -15,6 +15,18 @@ interface Person {
   name: string;
 }
 
+interface Student extends Person {
+  grade: "A" | "B" | "C";
+}
+
+interface Developer extends Person {
+  skills: string[];
+}
+
+interface Boss extends Person {
+  company: string;
+}
+
 /* [Test] 여기부터는 정답을 체크하기 위한 용도로 수정하지 않습니다 */
 import { Equal, Expect, NotAny } from "@type-challenges/utils";
 

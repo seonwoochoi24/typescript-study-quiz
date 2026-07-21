@@ -6,7 +6,7 @@
 */
 
 /* [Quiz] 아래의 코드를 완성해 오류를 제거하세요 */
-function introduce(name, tall) {
+function introduce(name="이정환", tall?: number) {
   if (!tall) {
     console.log(`안녕하세요 ${name}입니다!`);
   } else {

@@ -4,7 +4,7 @@
 (힌트. const 단언)
 */
 
-let value = 10;
+let value = 10 as const;
 giveMe10(value);
 
 /* [Test] 여기부터는 정답을 체크하기 위한 용도로 수정하지 않습니다 */

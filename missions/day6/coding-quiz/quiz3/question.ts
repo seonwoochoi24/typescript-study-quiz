@@ -6,10 +6,12 @@
 
 /* [Quiz] 아래의 코드를 완성해 오류를 제거하세요 */
 type Boss = {
+  type: "Boss";
   car: string;
 };
 
 type Employee = {
+  type: "Employee";
   salary: number;
 };
 

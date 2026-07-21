@@ -14,6 +14,6 @@ function add(a: number): number;
 function add(a: number, b: number, c: number): number;
 
 /* [Quiz] 구현 시그니쳐를 완성하세요 */
-function add(a, b, c) {
+function add(a?: number , b?: number, c?: number) {
   return (a ?? 0) + (b ?? 0) + (c ?? 0);
 }

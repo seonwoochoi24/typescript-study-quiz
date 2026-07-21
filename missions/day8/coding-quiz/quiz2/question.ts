@@ -16,10 +16,13 @@ type Member = {
 
 type User = Guest | Member;
 
-function isGuest(user: User) {}
+function isGuest(user: User): user is Guest {
+  return (user as Guest).visitCount !== undefined;
+}
 
-function isMember(user: User) {}
-
+function isMember(user: User): user is Member {
+  return (user as Member).id !== undefined;
+}
 /* [Test] 여기부터는 정답을 체크하기 위한 용도로 수정하지 않습니다 */
 
 function inviteUser(user: User) {
